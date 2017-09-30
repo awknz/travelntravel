@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title> Trip n Travel </title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />    
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />    
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> <!-- Style-CSS --> 
 <link rel="stylesheet" href="css/font-awesome.css" /> <!-- Font-Awesome-Icons-CSS -->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" /> <!-- Banner-Slider-CSS -->
@@ -14,6 +14,11 @@
 <!-- online-fonts -->
 <link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet" />
 <link href="//fonts.googleapis.com/css?family=Ubuntu+Condensed&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext" rel="stylesheet" />
+    <!-- js files -->
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+<!-- //js -->
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 
@@ -107,11 +112,7 @@
 
     </form>
 
-<!-- js files -->
-<!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
-<!-- //js -->
+
 <!-- js for banner -->
 <!-- responsiveslider -->
 	<script src="js/responsiveslides.min.js"></script>

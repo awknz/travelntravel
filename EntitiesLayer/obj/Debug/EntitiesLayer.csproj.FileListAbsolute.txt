@@ -1,0 +1,4 @@
+F:\travelntravel\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+F:\travelntravel\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+F:\travelntravel\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+F:\travelntravel\EntitiesLayer\obj\Debug\EntitiesLayer.pdb

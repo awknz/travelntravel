@@ -463,12 +463,12 @@
 				<h3>Get In Touch</h3>
 				<form action="#" method="post">
 					<div class="wthree_contact_left_grid">
-						<input type="text" name="Name" placeholder="Name" required="">
-						<input type="email" name="Email" placeholder="Email" required="">
-						<input type="text" name="number" placeholder="Phone Number" required="">
+						<input id="txtName" type="text" name="Name" placeholder="Name" required=""/>
+						<input id="txtEmail" type="email" name="Email" placeholder="Email" required=""/>
+						<input id="txtPhNumber" type="text" name="number" placeholder="Phone Number" required=""/>
 					</div>
-					<textarea name="Message" placeholder="Message......." required=""></textarea>
-					<input type="submit" value="Submit">
+					<textarea id="txtMessage" name="Message" placeholder="Message......." required=""></textarea>
+					<input type="submit" value="Submit" onclick="sendEmail();"/>
 				</form>
 			</div>
 			<div class="clearfix"> </div>
@@ -480,6 +480,41 @@
 </div>
 <!-- //mail -->
 
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+           
+
+        });
+
+        function sendEmail() {
+            
+            var data = {
+                name : $("input[id$=txtName]").val(),
+                phone: $("input[id$=txtPhNumber]").val(),
+                emaiTo: $("input[id$=txtEmail]").val(),
+                message: $("textarea[id$=txtMessage]").val(),
+            }
+          
+            $.ajax({
+                type:"POST",
+                url: "Default.aspx/sendEmail",
+                data: JSON.stringify({ obj: data}),
+                contentType: "application/json; charset=UTF-8",
+                dataType: "json",
+                suceess: function (data) {
+                    if (data == true)
+                    { alert("Email Sent"); }
+                    else
+                    { alert("Unable to send email at this time.Please try again later."); }
+                    
+            },
+            error: function (err) { alert(err.responseText); }
+            });
+
+        }
+    </script>
 
 </asp:Content>
 
