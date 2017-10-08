@@ -5,3 +5,5 @@ F:\travelntravel\BusinessLayer\bin\Debug\EntitiesLayer.dll
 F:\travelntravel\BusinessLayer\bin\Debug\EntitiesLayer.pdb
 F:\travelntravel\BusinessLayer\obj\Debug\BusinessLayer.dll
 F:\travelntravel\BusinessLayer\obj\Debug\BusinessLayer.pdb
+F:\travelntravel\BusinessLayer\bin\Debug\DataAccessLayer.dll
+F:\travelntravel\BusinessLayer\bin\Debug\DataAccessLayer.pdb

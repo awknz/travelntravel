@@ -2,4 +2,4 @@ F:\travelntravel\DataAccessLayer\bin\Debug\DataAccessLayer.dll
 F:\travelntravel\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
 F:\travelntravel\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 F:\travelntravel\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
-F:\travelntravel\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+F:\travelntravel\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config

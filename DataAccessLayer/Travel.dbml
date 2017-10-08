@@ -1,1 +1,13 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TRAVEL_DB" Class="TravelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-P6S4QG0;Initial Catalog=TRAVEL_DB;Integrated Security=True" SettingsObjectName="DataAccessLayer.Properties.Settings" SettingsPropertyName="TRAVEL_DBConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.PROC_INSERT_CLIENTS" Method="PROC_INSERT_CLIENTS">
+    <Parameter Name="NAME" Parameter="nAME" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DOB" Parameter="dOB" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="CNIC" Parameter="cNIC" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="EMAIL" Parameter="eMAIL" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="PHONE" Parameter="pHONE" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="CLIENT_TYPE" Parameter="cLIENT_TYPE" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="CLIENT_IP" Parameter="cLIENT_IP" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

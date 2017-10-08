@@ -22,6 +22,7 @@ namespace DataAccessLayer
 	using System;
 	
 	
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="TRAVEL_DB")]
 	public partial class TravelDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -30,6 +31,12 @@ namespace DataAccessLayer
     #region Extensibility Method Definitions
     partial void OnCreated();
     #endregion
+		
+		public TravelDataContext() : 
+				base(global::DataAccessLayer.Properties.Settings.Default.TRAVEL_DBConnectionString, mappingSource)
+		{
+			OnCreated();
+		}
 		
 		public TravelDataContext(string connection) : 
 				base(connection, mappingSource)
@@ -53,6 +60,13 @@ namespace DataAccessLayer
 				base(connection, mappingSource)
 		{
 			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PROC_INSERT_CLIENTS")]
+		public int PROC_INSERT_CLIENTS([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NAME", DbType="VarChar(100)")] string nAME, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DOB", DbType="VarChar(15)")] string dOB, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CNIC", DbType="VarChar(20)")] string cNIC, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EMAIL", DbType="VarChar(30)")] string eMAIL, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PHONE", DbType="VarChar(30)")] string pHONE, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CLIENT_TYPE", DbType="VarChar(2)")] string cLIENT_TYPE, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CLIENT_IP", DbType="VarChar(20)")] string cLIENT_IP)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nAME, dOB, cNIC, eMAIL, pHONE, cLIENT_TYPE, cLIENT_IP);
+			return ((int)(result.ReturnValue));
 		}
 	}
 }
